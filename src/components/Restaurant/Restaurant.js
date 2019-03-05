@@ -13,8 +13,8 @@ export default class Restaurant extends Component {
           <div className="status-delete">
             {
               isActive
-              ? <div className='active'>Active</div>
-              : <div className='inactive'>Inactive</div>
+              ? <div className='active'><i className="fas fa-check"></i></div>
+              : <div className='inactive'><i className="fas fa-check"></i></div>
             }
             <div 
               className="btn btn-delete" 

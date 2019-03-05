@@ -60,6 +60,7 @@ export default class Dashboard extends Component {
             <CreateRestaurant
               handleCloseRegister={this.handleCloseRegister}
               handleReloadRestaurants={this.handleReloadRestaurants}
+              visible={this.state.createRestaurantVisible}
             />
           }
           <ListRestaurants 

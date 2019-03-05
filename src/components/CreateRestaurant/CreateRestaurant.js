@@ -109,8 +109,13 @@ export default class CreateRestaurant extends Component {
 
   render() {
     const { submited, name, email, lat, lng, phone } = this.state;
+    const { visible } = this.props;
     return (
-      <div className='create-restaurant'>
+      <div className={`create-restaurant 
+        ${visible 
+          ? ' fullHeigh'
+          : '' }
+        `}>
         <div className="close">
           <p>New Restaurant</p>
           <i className="fas fa-times"
