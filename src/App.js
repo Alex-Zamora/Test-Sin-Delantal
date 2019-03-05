@@ -12,6 +12,7 @@ import Register from './components/Register/Register';
 import Dashboard from './components/Dashboard/Dashboard';
 import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Loginroute from './components/LoginRoute/LoginRoute';
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
       <Router>
         <div className='container'>
         <Switch>
-          <Route exact path="/" component={Login} />
+          <Loginroute exact path="/" component={Login} />
           <Route exact path="/register" component={Register} />
           <PrivateRoute exact path='/dashboard' component={Dashboard} />
           <Route path='*' component={NotFound} />
